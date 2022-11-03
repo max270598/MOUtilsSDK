@@ -17,6 +17,7 @@
 		A772C970291440120019BDD8 /* MOUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772C96F291440120019BDD8 /* MOUtils.swift */; };
 		A772C9722914404F0019BDD8 /* MOUtilsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772C94D29143FD50019BDD8 /* MOUtilsSDK.framework */; platformFilter = ios; };
 		A772C9732914404F0019BDD8 /* MOUtilsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A772C94D29143FD50019BDD8 /* MOUtilsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3F7701B50F362C454C545F1 /* Pods_MOUtilsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B89C617ADE917A11558A3ED /* Pods_MOUtilsSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B89C617ADE917A11558A3ED /* Pods_MOUtilsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOUtilsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA41FFC1223DAF3D98A5316 /* Pods-MOUtilsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOUtilsSDK.debug.xcconfig"; path = "Target Support Files/Pods-MOUtilsSDK/Pods-MOUtilsSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		A772C94D29143FD50019BDD8 /* MOUtilsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOUtilsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A772C95029143FD50019BDD8 /* MOUtilsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOUtilsSDK.h; sourceTree = "<group>"; };
 		A772C95B291440030019BDD8 /* MOUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +58,7 @@
 		A772C969291440030019BDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A772C96B291440030019BDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A772C96F291440120019BDD8 /* MOUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtils.swift; sourceTree = "<group>"; };
+		CCA9DA0AD0D6A5F44DA763FD /* Pods-MOUtilsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOUtilsSDK.release.xcconfig"; path = "Target Support Files/Pods-MOUtilsSDK/Pods-MOUtilsSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F7701B50F362C454C545F1 /* Pods_MOUtilsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				A772C95C291440030019BDD8 /* MOUtilsDemo */,
 				A772C94E29143FD50019BDD8 /* Products */,
 				A772C9712914404F0019BDD8 /* Frameworks */,
+				F93D408F95B6B1293DCA726F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +127,19 @@
 		A772C9712914404F0019BDD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B89C617ADE917A11558A3ED /* Pods_MOUtilsSDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F93D408F95B6B1293DCA726F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AA41FFC1223DAF3D98A5316 /* Pods-MOUtilsSDK.debug.xcconfig */,
+				CCA9DA0AD0D6A5F44DA763FD /* Pods-MOUtilsSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A772C95429143FD50019BDD8 /* Build configuration list for PBXNativeTarget "MOUtilsSDK" */;
 			buildPhases = (
+				9F9F28E0E70B570C65A9B937 /* [CP] Check Pods Manifest.lock */,
 				A772C94829143FD50019BDD8 /* Headers */,
 				A772C94929143FD50019BDD8 /* Sources */,
 				A772C94A29143FD50019BDD8 /* Frameworks */,
@@ -233,6 +251,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F9F28E0E70B570C65A9B937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOUtilsSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A772C94929143FD50019BDD8 /* Sources */ = {
@@ -406,6 +449,7 @@
 		};
 		A772C95529143FD50019BDD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA41FFC1223DAF3D98A5316 /* Pods-MOUtilsSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +482,7 @@
 		};
 		A772C95629143FD50019BDD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA9DA0AD0D6A5F44DA763FD /* Pods-MOUtilsSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

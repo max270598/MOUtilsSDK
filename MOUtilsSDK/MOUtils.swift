@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Kingfisher
 
 public class MOUtils {
     
