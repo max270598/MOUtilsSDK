@@ -17,6 +17,7 @@
 		A772C970291440120019BDD8 /* MOUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772C96F291440120019BDD8 /* MOUtils.swift */; };
 		A772C9722914404F0019BDD8 /* MOUtilsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772C94D29143FD50019BDD8 /* MOUtilsSDK.framework */; platformFilter = ios; };
 		A772C9732914404F0019BDD8 /* MOUtilsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A772C94D29143FD50019BDD8 /* MOUtilsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A772C9982918F8F80019BDD8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A772C9972918F8F80019BDD8 /* Network.swift */; };
 		E3F7701B50F362C454C545F1 /* Pods_MOUtilsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B89C617ADE917A11558A3ED /* Pods_MOUtilsSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		A772C969291440030019BDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A772C96B291440030019BDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A772C96F291440120019BDD8 /* MOUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUtils.swift; sourceTree = "<group>"; };
+		A772C9972918F8F80019BDD8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		CCA9DA0AD0D6A5F44DA763FD /* Pods-MOUtilsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOUtilsSDK.release.xcconfig"; path = "Target Support Files/Pods-MOUtilsSDK/Pods-MOUtilsSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		A772C94F29143FD50019BDD8 /* MOUtilsSDK */ = {
 			isa = PBXGroup;
 			children = (
+				A772C9992918F8FD0019BDD8 /* Network */,
 				A772C95029143FD50019BDD8 /* MOUtilsSDK.h */,
 				A772C96F291440120019BDD8 /* MOUtils.swift */,
 			);
@@ -132,13 +135,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A772C9992918F8FD0019BDD8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A772C9972918F8F80019BDD8 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F93D408F95B6B1293DCA726F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9AA41FFC1223DAF3D98A5316 /* Pods-MOUtilsSDK.debug.xcconfig */,
 				CCA9DA0AD0D6A5F44DA763FD /* Pods-MOUtilsSDK.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -282,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A772C9982918F8F80019BDD8 /* Network.swift in Sources */,
 				A772C970291440120019BDD8 /* MOUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

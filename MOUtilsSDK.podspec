@@ -28,7 +28,7 @@ s.framework = "UIKit"
 s.dependency 'Kingfisher'
 
 # 8
-s.source_files = "MOUtilsSDK/*"
+s.source_files = "MOUtilsSDK/**/*.{h,m,swift}"
 
 # 9
 
